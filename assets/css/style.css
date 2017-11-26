@@ -71,6 +71,10 @@ nav a:hover {
 	opacity: 0.8;
 }
 
+.work h3:hover {
+	background: #5e7f7e;
+}
+
 /* end hover styling */
 
 /* general styling */
