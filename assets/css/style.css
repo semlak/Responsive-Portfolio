@@ -231,13 +231,27 @@ h3,
 .work {
 	position: relative;
 	float: left;
-	width: 274px;
-	margin: 20px 0 25px;
+	width: 48%;
+	/*width: 274px;*/
+	/*margin: 20px 2.5% 25px;*/
+	margin-bottom: 25px;
 	overflow: auto;
+	/*margin-right: 4%;*/
 }
 
+
+
+.work:nth-child(odd) {
+	/*margin-right: 40px;*/
+	/*margin-right: 18%;*/
+	/*margin-right: 5%;*/
+
+}
+
+
 .work:nth-child(even) {
-	margin-right: 40px;
+	/*margin-right: 0px;*/
+	margin-right: 4%;
 }
 
 .work img {
@@ -302,6 +316,13 @@ input[type=submit] {
 }
 
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
 
 
 @media screen and (max-width: 980px) {
@@ -313,7 +334,7 @@ input[type=submit] {
 	}
 
 	.container {
-		max-width: 670px;
+		width: 670px;
 
 	}
 
@@ -340,10 +361,15 @@ input[type=submit] {
 
 @media screen and (max-width: 768px) {
 
-	.img-profile {
-		/*float: left;*/
-		/*width: 310px;*/
+
+	.main-section, .sidebar {
+		/*width: 100%;*/
+		display: block;
+		float: none;
+		clear: both;
+
 	}
+
 
 
 	.img-profile {
@@ -352,7 +378,7 @@ input[type=submit] {
 	}
 
 	.container {
-		/*max-width: 620px;*/
+		/*width: 678px;*/
 		/*width: 100%;*/
 	}
 
@@ -364,6 +390,7 @@ input[type=submit] {
 		/*margin: 0 20px 0 20px;*/
 		/*clear: both;*/
 		/*display: block;*/
+		/*width: 100%;*/
 	}
 
 /*	.main-section, .sidebar, .container {
@@ -371,7 +398,7 @@ input[type=submit] {
 	}
 */
 	.work {
-		width: 50%;
+		/*width: 50%;*/
 	}
 
 	.sidebar {
@@ -389,17 +416,27 @@ input[type=submit] {
 		width: 100%;
 	}
 
+	#logo {
+		/*float: none;*/
+		width: 100%;
+		/*max-width: 415px;*/
+		display: block;
+		clear: both;
+	}
+
 
 	.main-section, .sidebar, nav {
 		/*float: none;*/
-		max-width: 600px;
+		/*max-width: 600px;*/
 		/*display: block;*/
-		width: 600px;
+		max-width: 540px;
 	}
 
-	.sidebar {
-		/*margin-left: 40px;*/
+	.wrapper, nav {
+		margin: 0  40px 0 40px;
+		/*margin: 0 auto!important;*/
 	}
+
 
 	nav {
 		/*float: none;*/
@@ -413,12 +450,6 @@ input[type=submit] {
 		/*display: flex;*/
 	}
 
-	#logo {
-		/*float: none;*/
-		width: 100%;
-		/*max-width: 415px;*/
-		display: block;
-	}
 
 	header {
 		position: static!important;
@@ -432,10 +463,7 @@ input[type=submit] {
 		padding-top: 0px;
 	}
 
-	.wrapper, nav, .sidebar {
-		margin: 0  20px 0 20px;
-		/*margin: 0 auto!important;*/
-	}
+
 
 	nav a {
 		/*padding-left: 1%;*/
@@ -443,27 +471,9 @@ input[type=submit] {
 		/*width: 25%;*/
 	}
 
+	.work {
+		width: 100%;
+	}
 
 }
 
-
-
-/*
-	.wrapper {
-		width: 600px;
-
-	}
-
-	#main-content {
-			clear: both;
-			float: none;
-			margin: 40px auto;
-	}
-
-	#sidebar {
-			clear: both;
-			float: none;
-			margin: 40px auto;
-	}
-	*/
-}
