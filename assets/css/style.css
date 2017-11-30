@@ -80,8 +80,9 @@ nav a:hover {
 /* general styling */
 
 .container {
-	width: 100%;
-	max-width: 960px;
+	/*width: 100%;*/
+	/*max-width: 960px;*/
+	width: 960px;
 	margin: 0 auto;
 	clear: both;
 }
@@ -329,16 +330,25 @@ input[type=submit] {
 
 @media screen and (max-width: 980px) {
 
+	.container {
+		width: 720px;
+
+	}
+
+	.main-section {
+		width: 60%;
+	}
+
+	.sidebar {
+		width: 37%;
+	}
+
 	.img-profile {
-		/*display: block;*/
-		/*float: none;*/
+		display: block;
+		float: none;
 		width: 100%;
 	}
 
-	.container {
-		width: 670px;
-
-	}
 
 	.wrapper {
 		/*margin: 200px;*/
@@ -347,7 +357,7 @@ input[type=submit] {
 
 	.main-section {
 		/*max-width: 360px;*/
-		max-width: 50%;
+		/*max-width: 50%;*/
 	}
 	.sidebar {
 		/*max-width: 270px;*/
@@ -355,7 +365,7 @@ input[type=submit] {
 	}
 
 	.work {
-		width: 100%;
+		/*width: 100%;*/
 	}
 
 }
@@ -363,13 +373,23 @@ input[type=submit] {
 
 @media screen and (max-width: 768px) {
 
+	.container {
+		/*width: 678px;*/
+		width: 600px;
+		/*width: 100%;*/
+	}
+
 
 	.main-section, .sidebar {
-		/*width: 100%;*/
+		width: 100%;
 		display: block;
 		float: none;
 		clear: both;
 
+	}
+
+	.sidebar {
+		max-width: none;
 	}
 
 
@@ -379,13 +399,8 @@ input[type=submit] {
 		width: 50%;
 	}
 
-	.container {
-		/*width: 678px;*/
-		/*width: 100%;*/
-	}
 
 	.main-section, .sidebar {
-		float: none;
 		/*margin: 0;*/
 		/*width: 620px;*/
 		/*width: 200%*/
@@ -412,6 +427,26 @@ input[type=submit] {
 
 @media screen and (max-width: 640px) {
 
+
+	/* 	setting a hard width for container keeps my header from spanning the entire viewport,
+		so set for .main-container, .nav-container instead */
+
+	.container {
+		/*width: 100%;*/
+	}
+
+	.main-container, .nav-container {
+		/*width: 600px!important;*/
+		min-width: 380px
+		max-width: 600px;
+	}
+
+	.main-section, .sidebar {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.img-profile {
 		float: left;
 		/*width: 310px;*/
@@ -421,22 +456,53 @@ input[type=submit] {
 	#logo {
 		/*float: none;*/
 		width: 100%;
+		/*margin: none!important;*/
+		/*position: absolute;*/
 		/*max-width: 415px;*/
 		display: block;
 		clear: both;
+		float: none;
+	/*    content: "";
+	    clear: both;
+	    display: table;
+*/
 	}
 
+
+	nav {
+		/*padding-top: 90px;*/
+		/*float: none;*/
+		margin-left: 10%;
+		margin-right: 10%;
+		float: none;
+		margin: 5px auto;
+
+	}
+
+	.nav-container {
+		box-sizing: border-box;
+		margin: 0 10%;
+	}
+
+	nav a:last-child {
+		/*margin-right: 30px;*/
+	}
+
+
+	nav a {
+		width: 20%;
+	}
 
 	.main-section, .sidebar, nav {
 		/*float: none;*/
 		/*max-width: 600px;*/
 		/*display: block;*/
-		max-width: 540px;
-		width: 500px
+		/*max-width: 540px;*/
+		/*width: 500px*/
 	}
 
 	.wrapper, nav {
-		margin: 0  40px 0 40px;
+		/*margin: 0  40px 0 40px;*/
 		/*margin: 0 auto!important;*/
 	}
 
@@ -445,11 +511,9 @@ input[type=submit] {
 		/*float: none;*/
 		/*clear: both;*/
 		/*width: 100%;*/
-		float: left;
-		margin-left: 0;
+		/*margin-left: 0;*/
 		/*margin-top: 15px;*/
 		/*margin-bottom: 15px;*/
-		margin: 5px auto;
 		/*display: flex;*/
 	}
 
