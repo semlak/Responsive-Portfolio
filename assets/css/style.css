@@ -244,14 +244,6 @@ h3,
 
 
 
-.work:nth-child(odd) {
-	/*margin-right: 40px;*/
-	/*margin-right: 18%;*/
-	/*margin-right: 5%;*/
-
-}
-
-
 .work:nth-child(even) {
 	/*margin-right: 0px;*/
 	margin-right: 4%;
@@ -350,24 +342,6 @@ input[type=submit] {
 	}
 
 
-	.wrapper {
-		/*margin: 200px;*/
-	}
-
-
-	.main-section {
-		/*max-width: 360px;*/
-		/*max-width: 50%;*/
-	}
-	.sidebar {
-		/*max-width: 270px;*/
-		/*margin-left: 40px;*/
-	}
-
-	.work {
-		/*width: 100%;*/
-	}
-
 }
 
 
@@ -400,29 +374,6 @@ input[type=submit] {
 	}
 
 
-	.main-section, .sidebar {
-		/*margin: 0;*/
-		/*width: 620px;*/
-		/*width: 200%*/
-		/*margin: 0 20px 0 20px;*/
-		/*clear: both;*/
-		/*display: block;*/
-		/*width: 100%;*/
-	}
-
-/*	.main-section, .sidebar, .container {
-		max-width: 620px;
-	}
-*/
-	.work {
-		/*width: 50%;*/
-	}
-
-	.sidebar {
-		/* not working*/
-		/*margin-left: 40px;*/
-	}
-
 }
 
 @media screen and (max-width: 640px) {
@@ -436,7 +387,6 @@ input[type=submit] {
 	}
 
 	.main-container, .nav-container {
-		/*width: 600px!important;*/
 		min-width: 380px
 		max-width: 600px;
 	}
@@ -456,16 +406,10 @@ input[type=submit] {
 	#logo {
 		/*float: none;*/
 		width: 100%;
-		/*margin: none!important;*/
-		/*position: absolute;*/
-		/*max-width: 415px;*/
+
 		display: block;
 		clear: both;
 		float: none;
-	/*    content: "";
-	    clear: both;
-	    display: table;
-*/
 	}
 
 
@@ -484,37 +428,10 @@ input[type=submit] {
 		margin: 0 10%;
 	}
 
-	nav a:last-child {
-		/*margin-right: 30px;*/
-	}
 
 
 	nav a {
 		width: 20%;
-	}
-
-	.main-section, .sidebar, nav {
-		/*float: none;*/
-		/*max-width: 600px;*/
-		/*display: block;*/
-		/*max-width: 540px;*/
-		/*width: 500px*/
-	}
-
-	.wrapper, nav {
-		/*margin: 0  40px 0 40px;*/
-		/*margin: 0 auto!important;*/
-	}
-
-
-	nav {
-		/*float: none;*/
-		/*clear: both;*/
-		/*width: 100%;*/
-		/*margin-left: 0;*/
-		/*margin-top: 15px;*/
-		/*margin-bottom: 15px;*/
-		/*display: flex;*/
 	}
 
 
@@ -522,21 +439,12 @@ input[type=submit] {
 		position: static!important;
 	}
 
-	.main-section {
-		/*margin-top: 30px;*/
-	}
 
 	#main-container {
 		padding-top: 0px;
 	}
 
 
-
-	nav a {
-		/*padding-left: 1%;*/
-		/*margin-left: 1%;*/
-		/*width: 25%;*/
-	}
 
 	.work {
 		width: 100%;
